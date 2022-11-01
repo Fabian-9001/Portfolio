@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body__darktheme">
+
+    <nav class="navbar">
+        <span class="navbar__logo"><a href="#">FCG</a></span>
+        <ul class="navbar__list">
+            <li><a class="navbar__link link--active" href="#home">Inicio</a></li>
+            <li><a class="navbar__link" href="#about">Sobre Mi</a></li>
+            <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
+            <li><a class="navbar__link" href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+
+        <div class="container__background__svg">
+            <img class="background__svg background__svg1" src="./assets/img/blob (1).svg" alt="">
+            <img class="background__svg background__svg2" src="./assets/img/blob (2).svg" alt="">
+            <img class="background__svg background__svg3" src="./assets/img/blob (3).svg" alt="">
+            <img class="background__svg background__svg4" src="./assets/img/blob (4).svg" alt="">
+        </div>
+
+        <section id="home" class="section home hidden">
+            <h1 class="h1">Hola, soy <span class="home__name">Fabian Cruz</span> y soy desarrollador <span
+                    class="home__job"> FROND-END </span></h1>
+        </section>
+
+        <section id="about" class="section about hidden">
+            <h3 class="about__title">Sobre Mi</h3>
+            <p class="about__description">
+                Apasionado por el mundo de la tecnología, siempre intentado dar lo mejor de mi día a día en lo que sea
+                que haga, además un gran aficionado a la
+                actividad física ,los deportes ,música ,videojuegos y las películas
+                <br><br>
+                Me considero una persona responsable, respetuosa, proactiva, creativa, colaboracionista,
+                adaptable , de comunicación asertiva y capaz de trabajar tanto de manera individual como de manera
+                grupal
+            </p>
+
+            <!--<div class="container__myPhoto">
+                <img class="myPhoto" src="./assets/img/foto.jpg" alt="">
+            </div>-->
+        </section>
+
+        <section id="portfolio" class="section">
+            <h3>Projectos</h3>
+            <div class="portfolios">
+                <div>
+                    <img  id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Poke API.png" alt="">
+                </div>
+                <div>
+                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Rick and Morty.png" alt="">
+                </div>
+                <div>
+                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Wheater App.png" alt="">
+                </div>
+                <div>
+                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Quotes App.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="section hidden">
+
+            <h2>contactame</h2>
+
+            <form class="form">
+                <input type="text" placeholder="Ingresa tu Nombre" name="nameUser" id="nameUser">
+                <input type="email" placeholder="Ingresa tu Correo" name="emailUser" id="emailUser">
+
+                <textarea name="textUser" id="textUser" cols="30" rows="10"></textarea>
+                <button class="form__btn">Enviar</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
