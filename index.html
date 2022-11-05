@@ -11,69 +11,222 @@
 
 <body class="body__darktheme">
 
-    <nav class="navbar">
-        <span class="navbar__logo"><a href="#">FCG</a></span>
+    <nav id="navbar" class="navbar">
         <ul class="navbar__list">
             <li><a class="navbar__link link--active" href="#home">Inicio</a></li>
             <li><a class="navbar__link" href="#about">Sobre Mi</a></li>
             <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
             <li><a class="navbar__link" href="#contact">Contacto</a></li>
         </ul>
+        <div id="showNavbar" class="navbar__show">
+            <img class="navbar__img" src="./assets/img/logo.png" alt="">
+        </div>
     </nav>
 
     <main class="main">
 
         <div class="container__background__svg">
-            <img class="background__svg background__svg1" src="./assets/img/blob (1).svg" alt="">
-            <img class="background__svg background__svg2" src="./assets/img/blob (2).svg" alt="">
-            <img class="background__svg background__svg3" src="./assets/img/blob (3).svg" alt="">
-            <img class="background__svg background__svg4" src="./assets/img/blob (4).svg" alt="">
+            <img class="background__svg background__svg1" src="./assets/img//background/blob (1).svg"
+                alt="Imagen de Figura Redonda de color pastel verde ">
+            <img class="background__svg background__svg2" src="./assets/img//background/blob (2).svg"
+                alt="Imagen de Figura Redonda de color pastel rosa ">
+            <img class="background__svg background__svg3" src="./assets/img//background/blob (3).svg"
+                alt="Imagen de Figura Redonda de color pastel amarillo ">
+            <img class="background__svg background__svg4" src="./assets/img//background/blob (4).svg"
+                alt="Imagen de Figura Redonda de color pastel azul ">
         </div>
 
         <section id="home" class="section home hidden">
-            <h1 class="h1">Hola, soy <span class="home__name">Fabian Cruz</span> y soy desarrollador <span
-                    class="home__job"> FROND-END </span></h1>
-        </section>
 
-        <section id="about" class="section about hidden">
-            <h3 class="about__title">Sobre Mi</h3>
-            <p class="about__description">
-                Apasionado por el mundo de la tecnología, siempre intentado dar lo mejor de mi día a día en lo que sea
-                que haga, además un gran aficionado a la
-                actividad física ,los deportes ,música ,videojuegos y las películas
-                <br><br>
-                Me considero una persona responsable, respetuosa, proactiva, creativa, colaboracionista,
-                adaptable , de comunicación asertiva y capaz de trabajar tanto de manera individual como de manera
-                grupal
-            </p>
+            <h1 class="h1">Hola, soy
+                <span class="home__name">Fabian Cruz</span>
+                y soy desarrollador
+                <span class="home__job"> FROND-END </span>
+            </h1>
 
-            <!--<div class="container__myPhoto">
-                <img class="myPhoto" src="./assets/img/foto.jpg" alt="">
-            </div>-->
-        </section>
+            <div class="home__socials">
+                <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
+                    <img class="home__socials__img hidden" src="./assets/img//icons/linkedin.gif"
+                        alt="Logo de Linkedin">
+                </a>
 
-        <section id="portfolio" class="section">
-            <h3>Projectos</h3>
-            <div class="portfolios">
-                <div>
-                    <img  id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Poke API.png" alt="">
-                </div>
-                <div>
-                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Rick and Morty.png" alt="">
-                </div>
-                <div>
-                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Wheater App.png" alt="">
-                </div>
-                <div>
-                    <img id="portfolio" class="portfolio portfolio__img hidden" src="./assets/img/Quotes App.png" alt="">
-                </div>
+                <a target="_blank" href="https://www.instagram.com/fabian_cruz21/?theme=dark">
+                    <img class="home__socials__img hidden" src="./assets/img//icons/instagram.gif"
+                        alt="Logo de instagram">
+                </a>
+
+                <a target="_blank" href="https://github.com/Fabian-9001">
+                    <img class="home__socials__img hidden" src="./assets/img/icons/github.gif" alt="Logo de Github">
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/fabian.cruz.garcia.9001/">
+                    <img class="home__socials__img hidden" src="./assets/img//icons/facebook.gif"
+                        alt="Logo de Facebook">
+                </a>
             </div>
 
         </section>
 
-        <section id="contact" class="section hidden">
+        <section id="about" class="section show about">
 
-            <h2>contactame</h2>
+            <div class="about__subcontainer ">
+                <h3 class="about__title">Sobre Mi</h3>
+            </div>
+
+            <div class="about__subcontainer">
+                <p class="about__description">
+                    Apasionado por el mundo de la tecnología,en busca de nuevas experiencias
+                    y ansioso por adquirir nuevos conocimientos,
+                    ofrezco todo mi empeño,cortesia, habilidad y respeto
+                    para contribuir al desarrollo de la empresa
+                </p>
+                <ul class="about__list">
+                    <p class="about__list__title">Te ayudo a:</p>
+                    <li class="about__list__item">-Crear Sitios Web Atractivos</li>
+                    <li class="about__list__item">-Sitios Web de Alta Calidad e Impacto</li>
+                    <li class="about__list__item">-Implementar Practicas de SEO</li>
+                    <li class="about__list__item">-Aumentar Popularidad de tu Negocio</li>
+                    <li class="about__list__item">-Facilitar Navegacion e Interaccion con el Usuario</li>
+                    <li class="about__list__item">-Optimizacion de Sitios,Interfaces y Apps Web</li>
+                </ul>
+                <ul class="about__list">
+                    <h3 class="about__list__title">Habilidades</h3>
+                    <li class="about__list__item">-Primero Diseño Movil</li>
+                    <li class="about__list__item">-Diseño Responsivo</li>
+                    <li class="about__list__item">-Layout</li>
+                    <li class="about__list__item">-Diseño Web</li>
+                    <li class="about__list__item">-Optimizacion de Sitios,Interfaces y Apps Web</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="tecnology" class="section tecnology show">
+            <div class="tecnology__container__slider">
+                <div class="tecnology__line"></div>
+                <div class="tecnology__slider">
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__html" src="./assets/img/slider__tech/html_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">HTML</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__css" src="./assets/img/slider__tech/css_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">CSS</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__javascript"
+                            src="./assets/img/slider__tech/javascript_S.png" alt="">
+                        <h3 class="tecnology__img__name">JavaScript</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__react" src="./assets/img/slider__tech/react_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">React</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__router" src="./assets/img/slider__tech/router_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">React Router</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__redux" src="./assets/img/slider__tech/redux_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">Redux</h3>
+                    </div>
+                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                        class="tecnology__container__img">
+                        <img class="tecnology__img tecnology__img__github" src="./assets/img/slider__tech/github_S.png"
+                            alt="">
+                        <h3 class="tecnology__img__name">GitHub</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <div class="projects">
+
+                <div class="project__container">
+
+                    <header class="project__header">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </header>
+
+                    <img id="portfolio" class="project project__img hidden"
+                        src="./assets/img//proyects/Poke API.png" alt="">
+
+                    <footer class="project__footer">
+                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                    </footer>
+
+                </div>
+
+                <div class="project__container">
+
+                    <header class="project__header">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </header>
+
+                    <img id="portfolio" class="project project__img hidden"
+                        src="./assets/img//proyects/Rick and Morty.png" alt="">
+
+                    <footer class="project__footer">
+                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                    </footer>
+
+                </div>
+
+                <div class="project__container">
+
+                    <header class="project__header">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </header>
+
+                    <img id="portfolio" class="project project__img hidden"
+                        src="./assets/img//proyects/Wheater App.png" alt="">
+
+                    <footer class="project__footer">
+                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                    </footer>
+
+                </div>
+
+                <div class="project__container">
+
+                    <header class="project__header">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </header>
+
+                    <img id="portfolio" class="project project__img hidden"
+                        src="./assets/img//proyects/Quotes App.png" alt="">
+
+                    <footer class="project__footer">
+                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                    </footer>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="section contact hidden">
 
             <form class="form">
                 <input type="text" placeholder="Ingresa tu Nombre" name="nameUser" id="nameUser">
@@ -87,10 +240,8 @@
 
     </main>
 
-
-
-
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
 </body>
 
 </html>
