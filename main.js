@@ -36,6 +36,16 @@ const showNavbar = document.getElementById('showNavbar')
 
 
 showNavbar.addEventListener('click', () => {
-     navbar.classList.toggle('show')
+    navbar.classList.toggle('show')
 })
- console.log(navbar)
+console.log(navbar)
+
+
+/*PARALLAX*/ 
+window.onscroll = () => {
+    let position = window.pageYOffset && document.documentElement.scrollTop
+
+
+    const parallax = document.getElementById('parallax')
+    parallax.style.bottom = position * 0.1 + "px"
+}
