@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="body__darktheme">
+<body class="body">
 
-    <nav id="navbar" class="navbar">
-        <ul class="navbar__list">
-            <li><a class="navbar__link link--active" href="#home">Inicio</a></li>
-            <li><a class="navbar__link" href="#about">Sobre Mi</a></li>
-            <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
-            <li><a class="navbar__link" href="#contact">Contacto</a></li>
-        </ul>
-        <img id="showNavbar" class="navbar__show" src="./assets/img/logo.gif" alt="">
-    </nav>
+    <header class="header">
+        <nav id="navbar" class="navbar">
+            <ul class="navbar__list">
+                <li><a class="navbar__link link--active" href="#home">Inicio</a></li>
+                <li><a class="navbar__link" href="#about">Sobre Mi</a></li>
+                <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
+                <li><a class="navbar__link" href="#contact">Contacto</a></li>
+            </ul>
+            <img id="showNavbar" class="navbar__show" src="./assets/img/logo.gif" alt="">
+        </nav>
+    </header>
 
     <main class="main">
 
@@ -66,96 +68,127 @@
         </section>
 
         <section id="about" class="section show about">
-            <div class="about__container">
-                <div class="about__subcontainer ">
-                    <h3 class="about__title">Sobre Mi</h3>
-                </div>
+            <div class="about__container hidden">
 
-                <div class="about__subcontainer">
-                    <p class="about__description">
+                <header>
+                    <h3 class="about__title">Sobre Mi</h3>
+                </header>
+
+                <div class="about__description">
+
+                    <p class="about__text">
                         Apasionado por el mundo de la tecnología,en busca de nuevas experiencias
                         y ansioso por adquirir nuevos conocimientos,
                         ofrezco todo mi empeño,cortesia, habilidad y respeto
                         para contribuir al desarrollo de la empresa
                     </p>
+
                     <ul class="about__list">
-                        <p class="about__list__title">Te ayudo a:</p>
+                        <p class="about__list__title">Te puedo ayudar a:</p>
                         <li class="about__list__item">-Crear Sitios Web Atractivos</li>
-                        <li class="about__list__item">-Sitios Web de Alta Calidad e Impacto</li>
+                        <li class="about__list__item">-Sitios Web de Alta Calidad</li>
                         <li class="about__list__item">-Implementar Practicas de SEO</li>
                         <li class="about__list__item">-Aumentar Popularidad de tu Negocio</li>
-                        <li class="about__list__item">-Facilitar Navegacion e Interaccion con el Usuario</li>
-                        <li class="about__list__item">-Optimizacion de Sitios,Interfaces y Apps Web</li>
+                        <li class="about__list__item">-Facilitar la Navegacion e Interaccion con el Usuario</li>
+                        <li class="about__list__item">-Optimizar Sitios,Interfaces y Apps Web</li>
                     </ul>
-                    <!-- <ul class="about__list">
-                    <h3 class="about__list__title">Habilidades</h3>
-                    <li class="about__list__item">-Primero Diseño Movil</li>
-                    <li class="about__list__item">-Diseño Responsivo</li>
-                    <li class="about__list__item">-Layout</li>
-                    <li class="about__list__item">-Diseño Web</li>
-                    <li class="about__list__item">-Optimizacion de Sitios,Interfaces y Apps Web</li>
-                </ul>-->
+
                 </div>
+
+                <footer class="about__footer">
+                    <button class="about__btn">
+                        <a class="about__link" download="Fabian Cruz CV" href="./assets/CV/Fabian Cruz CV .pdf">
+                            <p>CV</p>
+                            <img class="about__btn__img" src="./assets/img/icons/cv.png" alt="">
+                        </a>
+                    </button>
+
+                    <button class="about__btn">
+                        <a class="about__link" href="mailto:garciacruzfabian23@gmail.com">
+                            <p>Correo</p>
+                            <img class="about__btn__img" src="./assets/img/icons/correo.png" alt="">
+                        </a>
+                    </button>
+                </footer>
+
             </div>
         </section>
 
         <section id="tecnology" class="section tecnology show">
+            <header class="tecnology__header">
+                <h3>Habilidades</h3>
+            </header>
             <div class="tecnology__container__slider">
+
                 <div class="tecnology__line"></div>
+
                 <div class="tecnology__slider">
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__html" src="./assets/img/slider__skills/telefono-movil.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">HTML</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__html"
+                            src="./assets/img/slider__skills/telefono-movil.png" alt="">
+                        <h3 class="tecnology__img__name">Primero Movil</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__css" src="./assets/img/slider__skills/responsivo.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">CSS</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__css"
+                            src="./assets/img/slider__skills/responsivo.png" alt="">
+                        <h3 class="tecnology__img__name">Diseño Responsivo</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__javascript"
                             src="./assets/img/slider__skills/diseño.png" alt="">
-                        <h3 class="tecnology__img__name">JavaScript</h3>
+                        <h3 class="tecnology__img__name">Diseño Web</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__react" src="./assets/img/slider__skills/layout.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">React</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__react"
+                            src="./assets/img/slider__skills/layout.png" alt="">
+                        <h3 class="tecnology__img__name">Layout</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__router" src="./assets/img/slider__skills/optimizacion-web.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">React Router</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__router"
+                            src="./assets/img/slider__skills/optimizacion-web.png" alt="">
+                        <h3 class="tecnology__img__name">Optimizacion Web</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__redux" src="./assets/img/slider__tech/redux_S.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">Redux</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__redux"
+                            src="./assets/img/slider__skills/adaptado.png" alt="">
+                        <h3 class="tecnology__img__name">Adaptabilidad</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__github" src="./assets/img/slider__tech/github_S.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">GitHub</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__github"
+                            src="./assets/img/slider__skills/equipo.png" alt="">
+                        <h3 class="tecnology__img__name">Trabajo en equipo</h3>
                     </div>
+
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img--size tecnology__img__github" src="./assets/img/slider__tech/github_S.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">GitHub</h3>
+                        <img class="tecnology__img tecnology__img--size tecnology__img__github"
+                            src="./assets/img/slider__skills/proactivo.png" alt="">
+                        <h3 class="tecnology__img__name">Proactividad</h3>
                     </div>
+
                 </div>
+
             </div>
         </section>
 
         <section id="tecnology" class="section tecnology show">
+            <header class="tecnology__header">
+                <h3>Tecnologias</h3>
+            </header>
             <div class="tecnology__container__slider">
                 <div class="tecnology__line"></div>
                 <div class="tecnology__slider2">
@@ -203,9 +236,9 @@
                     </div>
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
-                        <img class="tecnology__img tecnology__img__github" src="./assets/img/slider__tech/github_S.png"
-                            alt="">
-                        <h3 class="tecnology__img__name">GitHub</h3>
+                        <img class="tecnology__img tecnology__img__github"
+                            src="./assets/img/slider__tech/aprendiendo.png" alt="">
+                        <h3 class="tecnology__img__name">Aprendiendo...</h3>
                     </div>
                 </div>
             </div>
@@ -214,19 +247,59 @@
         <section id="portfolio" class="section portfolio show">
             <div class="projects">
 
+                <header class="portdolio__header">
+                    <h3>Proyectos</h3>
+                </header>
+
                 <div class="project__container">
 
                     <header class="project__header">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+
+                        <div class="project__header__tech">
+                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/redux.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/javascript.png"
+                                alt="">
+                        </div>
+
+                        <div class="project__header__btns">
+
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://github.com/Fabian-9001/POKE-API.git">
+                                    <p>Github</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/github.png" alt="">
+                                </a>
+                            </button>
+
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://poke-api-9001.netlify.app">
+                                    <p>Desplegable</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/desplegar.png" alt="">
+                                </a>
+                            </button>
+
+                        </div>
+
                     </header>
 
-                    <img id="portfolio" class="project project__img hidden"
-                        src="./assets/img//proyects/pokmeon wallpaper.jpg" alt="">
+                    <div class="hidden">
+                        <img class="project__poster" src="./assets/img/proyects/pokmeon wallpaper.jpg" alt="">
+                        <video id="portfolio" class="project project__img " src="./assets/img/videos/pokemon.mp4"
+                            type="video/mp4" loop></video>
+                    </div>
 
                     <footer class="project__footer">
-                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                        <p class="project__footer__title">POKEDEX</p>
+                        <p class="project__footer__description">
+                            -Single Page Aplication con React Router para navegar a diferentes secciones
+                            <br><br>
+                            -Manejo de APIs en estados globales con Redux y los metodos Redux Flux,Redux Thunk
+                            <br><br>
+                            -Busquedas con inputs no controlados y renderizados condicionales
+                        </p>
                     </footer>
 
                 </div>
@@ -234,16 +307,49 @@
                 <div class="project__container">
 
                     <header class="project__header">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+
+                        <div class="project__header__tech">
+                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/javascript.png"
+                                alt="">
+                        </div>
+
+                        <div class="project__header__btns">
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://github.com/Fabian-9001/Rick-and-Morty-App.git">
+                                    <p>Github</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/github.png" alt="">
+                                </a>
+                            </button>
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://rick-and-morty-9001.netlify.app">
+                                    <p>Desplegable</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/desplegar.png" alt="">
+                                </a>
+                            </button>
+                        </div>
+
                     </header>
 
-                    <img id="portfolio" class="project project__img hidden"
-                        src="./assets/img//proyects/rick and morty wallpaper.jpg" alt="">
+                    <div class="hidden">
+                        <img class="project__poster" src="./assets/img/proyects/rick and morty wallpaper.jpg" alt="">
+                        <video id="portfolio" class="project project__img"
+                            src="./assets/img/videos/rick and morty.mp4" type="video/mp4" loop></video>
+                    </div>
 
                     <footer class="project__footer">
-                        <p>Lorem ipsum dolor sit, amet consectetu</p>
+                        <p class="project__footer__title">Rick and Morty</p>
+                        <p class="project__footer__description">
+                            -Localizaciones y habitantes aleatorios mediante Math Ramdom
+                            <br><br>
+                            -Renderizados condicionales segun el status del personaje con useState
+                            <br><br>
+                            -Lista de sugerencias a localizaciones de manera dinamica y
+                            navegaciones por medio de un input controlado y no controlado
+                        </p>
                     </footer>
 
                 </div>
@@ -251,54 +357,97 @@
                 <div class="project__container">
 
                     <header class="project__header">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+
+                        <div class="project__header__tech">
+                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
+                        </div>
+
+                        <div class="project__header__btns">
+
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://github.com/Fabian-9001/Weather-App.git">
+                                    <p>Github</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/github.png" alt="">
+                                </a>
+                            </button>
+
+                            <button class="project__header__btn">
+                                <a target="_blank" href="https://weather-app-ramdom-img.netlify.app">
+                                    <p>Desplegable</p>
+                                    <img class="project__header__btn__img"
+                                        src="./assets/img/projects_technology/desplegar.png" alt="">
+                                </a>
+                            </button>
+
+                        </div>
+
                     </header>
 
-                    <img id="portfolio" class="project project__img hidden" src="./assets/img//proyects/Wheater App.png"
-                        alt="">
+                    <div class="hidden">
+                        <img class="project__poster" src="./assets/img/proyects/weather app" alt="">
+                        <video id="portfolio" class="project project__img"
+                            src="./assets/img/videos/weather app.mp4" type="video/mp4" loop></video>
+                    </div>
 
                     <footer class="project__footer">
-                        <p>Lorem ipsum dolor sit, amet consectetu</p>
-                    </footer>
-
-                </div>
-
-                <div class="project__container">
-
-                    <header class="project__header">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="project__footer__title">Weather APP</p>
+                        <p class="project__footer__description">
+                            -Obtiene la localizacion actual con la API de geolocalización
+                            <br><br>
+                            -Navegación a localizaciones mediante un input no controlado
+                            <br><br>
+                            -Consigue información de la zona especificada, entre ellas la temperatura y la
+                            trasforma en grados Celsius y Fahrenheit
                         </p>
-                    </header>
-
-                    <img id="portfolio" class="project project__img hidden"
-                        src="./assets/img//proyects/quotes wallpaper.jpg" alt="">
-
-                    <footer class="project__footer">
-                        <p>Lorem ipsum dolor sit, amet consectetu</p>
                     </footer>
 
                 </div>
 
             </div>
-
         </section>
 
         <section id="contact" class="section contact hidden">
 
-            <form class="form">
-                <input type="text" placeholder="Ingresa tu Nombre" name="nameUser" id="nameUser">
-                <input type="email" placeholder="Ingresa tu Correo" name="emailUser" id="emailUser">
-
-                <textarea name="textUser" id="textUser" cols="30" rows="10"></textarea>
-                <button class="form__btn">Enviar</button>
+            <form id="form" class="form">
+                <input type="text" placeholder="Ingresa tu Nombre" name="nameUser" id="inputName">
+                <input type="email" placeholder="Ingresa tu Correo" name="emailUser" id="inputEmail">
+                <textarea name="textUser" id="inputText" cols="30" rows="10"></textarea>
+                <button id="formBtn" class="form__btn">Enviar</button>
             </form>
 
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img class="footer__img" src="./assets/img/logo.png" alt="">
+        </div>
+        <div>
+            <p class="footer__copyright">Copyright © All Rights Reserved</p>
+        </div>
+        <div class="footer__socials">
+            <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
+                <img class="home__socials__img" src="./assets/img//icons/linkedin.gif" alt="Logo de Linkedin">
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/fabian_cruz21/?theme=dark">
+                <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/instagram.gif"
+                    alt="Logo de instagram">
+            </a>
+
+            <a target="_blank" href="https://github.com/Fabian-9001">
+                <img class="home__socials__img" src="./assets/img/icons/github.gif" alt="Logo de Github">
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/fabian.cruz.garcia.9001/">
+                <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/facebook.gif"
+                    alt="Logo de Facebook">
+            </a>
+        </div>
+    </footer>
 
     <script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>

@@ -2,7 +2,6 @@
 const hiddenElement = document.querySelectorAll('.hidden')
 const links = document.querySelectorAll('.navbar__link')
 
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -29,8 +28,7 @@ const observer = new IntersectionObserver((entries) => {
 
 hiddenElement.forEach(element => observer.observe(element))
 
-/*COLORS*/
-
+/*NAVBAR SHOW*/
 const navbar = document.getElementById('navbar')
 const showNavbar = document.getElementById('showNavbar')
 
@@ -38,10 +36,9 @@ const showNavbar = document.getElementById('showNavbar')
 showNavbar.addEventListener('click', () => {
     navbar.classList.toggle('show')
 })
-console.log(navbar)
 
 
-/*PARALLAX*/ 
+/*PARALLAX*/
 window.onscroll = () => {
     let position = window.pageYOffset && document.documentElement.scrollTop
 
@@ -49,3 +46,28 @@ window.onscroll = () => {
     const parallax = document.getElementById('parallax')
     parallax.style.bottom = position * 0.1 + "px"
 }
+
+/*HOVER VIDEO*/
+const videos = document.querySelectorAll('.project__img')
+for (let video of videos) {
+
+    video.addEventListener('mouseenter', () => {
+        video.play()
+
+    })
+
+    video.addEventListener('mouseout', () => {
+        video.pause()
+    })
+}
+
+/*FORM*/
+const formBtn = document.getElementById('formBtn')
+
+formBtn.addEventListener('click', e => {
+    e.preventDefault()
+    const name = document.getElementById('inputName').value
+    const email = document.getElementById('inputEmail').value
+    const text = document.getElementById('inputText').value
+    window.location.href = `mailto:garciacruzfabian23@gmail.com?body=Nombre%3D${name}%0ACorreo%3D${email}%0AMensaje%3D${text}`
+})
