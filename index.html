@@ -19,7 +19,10 @@
                 <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
                 <li><a class="navbar__link" href="#contact">Contacto</a></li>
             </ul>
-            <img id="showNavbar" class="navbar__show" src="./assets/img/logo.gif" alt="">
+            <div id="showNavbar" class="navbar__show">
+                <spna class="navbar__cross"></spna>
+            </div>
+          
         </nav>
     </header>
 
@@ -65,6 +68,12 @@
                 </a>
             </div>
 
+            <div class="home__scroll">
+                <spna class="home__cross"></spna>
+                <spna class="home__cross"></spna>
+                <spna class="home__cross"></spna>
+            </div>
+
         </section>
 
         <section id="about" class="section show about">
@@ -77,10 +86,11 @@
                 <div class="about__description">
 
                     <p class="about__text">
+                        FROND-END Developer centrado en el mejor rendimiento y la experiencia del usuario.
+                        <br>
                         Apasionado por el mundo de la tecnología,en busca de nuevas experiencias
                         y ansioso por adquirir nuevos conocimientos,
-                        ofrezco todo mi empeño,cortesia, habilidad y respeto
-                        para contribuir al desarrollo de la empresa
+                        siempre dando lo mejor de mi en cada projecto y listo para trabajar
                     </p>
 
                     <ul class="about__list">
@@ -191,7 +201,7 @@
             </header>
             <div class="tecnology__container__slider">
                 <div class="tecnology__line"></div>
-                <div class="tecnology__slider2">
+                <div class="tecnology__slider">
                     <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img__html" src="./assets/img/slider__tech/html_S.png"
@@ -258,9 +268,10 @@
                         <div class="project__header__tech">
                             <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
                             <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/redux.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/javascript.png"
-                                alt="">
+                            <img class="project__technology project__technology--size"
+                                src="./assets/img/projects_technology/redux.png" alt="">
+                            <img class="project__technology project__technology--size"
+                                src="./assets/img/projects_technology/javascript.png" alt="">
                         </div>
 
                         <div class="project__header__btns">
@@ -285,11 +296,7 @@
 
                     </header>
 
-                    <div class="hidden">
-                        <img class="project__poster" src="./assets/img/proyects/pokmeon wallpaper.jpg" alt="">
-                        <video id="portfolio" class="project project__img " src="./assets/img/videos/pokemon.mp4"
-                            type="video/mp4" loop></video>
-                    </div>
+                    <div class="hidden project__posters posters__pokemon"></div>
 
                     <footer class="project__footer">
                         <p class="project__footer__title">POKEDEX</p>
@@ -311,8 +318,8 @@
                         <div class="project__header__tech">
                             <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
                             <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/javascript.png"
-                                alt="">
+                            <img class="project__technology project__technology--size"
+                                src="./assets/img/projects_technology/javascript.png" alt="">
                         </div>
 
                         <div class="project__header__btns">
@@ -334,11 +341,7 @@
 
                     </header>
 
-                    <div class="hidden">
-                        <img class="project__poster" src="./assets/img/proyects/rick and morty wallpaper.jpg" alt="">
-                        <video id="portfolio" class="project project__img"
-                            src="./assets/img/videos/rick and morty.mp4" type="video/mp4" loop></video>
-                    </div>
+                    <div class="hidden project__posters posters__rickMorty"></div>
 
                     <footer class="project__footer">
                         <p class="project__footer__title">Rick and Morty</p>
@@ -385,11 +388,7 @@
 
                     </header>
 
-                    <div class="hidden">
-                        <img class="project__poster" src="./assets/img/proyects/weather app" alt="">
-                        <video id="portfolio" class="project project__img"
-                            src="./assets/img/videos/weather app.mp4" type="video/mp4" loop></video>
-                    </div>
+                    <div class="hidden project__posters posters__quotes"></div>
 
                     <footer class="project__footer">
                         <p class="project__footer__title">Weather APP</p>
@@ -409,44 +408,48 @@
         </section>
 
         <section id="contact" class="section contact hidden">
-
+            <h3 class="contact__title">Contactame</h3>
             <form id="form" class="form">
                 <input type="text" placeholder="Ingresa tu Nombre" name="nameUser" id="inputName">
                 <input type="email" placeholder="Ingresa tu Correo" name="emailUser" id="inputEmail">
-                <textarea name="textUser" id="inputText" cols="30" rows="10"></textarea>
+                <textarea name="textUser" id="inputText" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 <button id="formBtn" class="form__btn">Enviar</button>
             </form>
-
         </section>
 
     </main>
 
     <footer class="footer">
-        <div class="footer__logo">
-            <img class="footer__img" src="./assets/img/logo.png" alt="">
+        <div class="footer__subcontainer1">
+            <div class="footer__logo">
+                <img class="footer__img" src="./assets/img/logo.png" alt="">
+            </div>
+
+            <div class="footer__socials">
+                <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
+                    <img class="home__socials__img" src="./assets/img//icons/linkedin.gif" alt="Logo de Linkedin">
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/fabian_cruz21/?theme=dark">
+                    <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/instagram.gif"
+                        alt="Logo de instagram">
+                </a>
+
+                <a target="_blank" href="https://github.com/Fabian-9001">
+                    <img class="home__socials__img" src="./assets/img/icons/github.gif" alt="Logo de Github">
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/fabian.cruz.garcia.9001/">
+                    <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/facebook.gif"
+                        alt="Logo de Facebook">
+                </a>
+            </div>
         </div>
-        <div>
+
+        <div class="footer__subcontainer2">
             <p class="footer__copyright">Copyright © All Rights Reserved</p>
         </div>
-        <div class="footer__socials">
-            <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
-                <img class="home__socials__img" src="./assets/img//icons/linkedin.gif" alt="Logo de Linkedin">
-            </a>
 
-            <a target="_blank" href="https://www.instagram.com/fabian_cruz21/?theme=dark">
-                <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/instagram.gif"
-                    alt="Logo de instagram">
-            </a>
-
-            <a target="_blank" href="https://github.com/Fabian-9001">
-                <img class="home__socials__img" src="./assets/img/icons/github.gif" alt="Logo de Github">
-            </a>
-
-            <a target="_blank" href="https://www.facebook.com/fabian.cruz.garcia.9001/">
-                <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/facebook.gif"
-                    alt="Logo de Facebook">
-            </a>
-        </div>
     </footer>
 
     <script src="./main.js"></script>
