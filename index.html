@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/img/logo.png" />
+    <title>Fabian Cruz</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -14,7 +15,7 @@
     <header class="header">
         <nav id="navbar" class="navbar">
             <ul class="navbar__list">
-                <li><a class="navbar__link link--active" href="#home">Inicio</a></li>
+                <li><a class="navbar__link" href="#home">Inicio</a></li>
                 <li><a class="navbar__link" href="#about">Sobre Mi</a></li>
                 <li><a class="navbar__link" href="#portfolio">Portafolio</a></li>
                 <li><a class="navbar__link" href="#contact">Contacto</a></li>
@@ -22,7 +23,6 @@
             <div id="showNavbar" class="navbar__show">
                 <spna class="navbar__cross"></spna>
             </div>
-          
         </nav>
     </header>
 
@@ -40,13 +40,13 @@
         </div>
 
         <section id="home" class="section home hidden">
-
-            <h1 id="parallax" class="h1">Hola, soy
-                <span class="home__name">Fabian Cruz</span>
-                y soy desarrollador
-                <span class="home__job"> FROND-END </span>
-            </h1>
-
+            <header>
+                <h1 id="parallax" class="h1">Hola, soy
+                    <span class="home__name">Fabian Cruz</span>
+                    y soy desarrollador
+                    <span class="home__job"> FROND-END </span>
+                </h1>
+            </header>
             <div class="home__socials">
                 <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
                     <img class="home__socials__img hidden" src="./assets/img//icons/linkedin.gif"
@@ -67,24 +67,19 @@
                         src="./assets/img//icons/facebook.gif" alt="Logo de Facebook">
                 </a>
             </div>
-
             <div class="home__scroll">
                 <spna class="home__cross"></spna>
                 <spna class="home__cross"></spna>
                 <spna class="home__cross"></spna>
             </div>
-
         </section>
 
         <section id="about" class="section show about">
             <div class="about__container hidden">
-
                 <header>
                     <h3 class="about__title">Sobre Mi</h3>
                 </header>
-
                 <div class="about__description">
-
                     <p class="about__text">
                         FROND-END Developer centrado en el mejor rendimiento y la experiencia del usuario.
                         <br>
@@ -92,7 +87,6 @@
                         y ansioso por adquirir nuevos conocimientos,
                         siempre dando lo mejor de mi en cada projecto y listo para trabajar
                     </p>
-
                     <ul class="about__list">
                         <p class="about__list__title">Te puedo ayudar a:</p>
                         <li class="about__list__item">-Crear Sitios Web Atractivos</li>
@@ -102,25 +96,22 @@
                         <li class="about__list__item">-Facilitar la Navegacion e Interaccion con el Usuario</li>
                         <li class="about__list__item">-Optimizar Sitios,Interfaces y Apps Web</li>
                     </ul>
-
                 </div>
-
                 <footer class="about__footer">
                     <button class="about__btn">
                         <a class="about__link" download="Fabian Cruz CV" href="./assets/CV/Fabian Cruz CV .pdf">
                             <p>CV</p>
-                            <img class="about__btn__img" src="./assets/img/icons/cv.png" alt="">
+                            <img class="about__btn__img" src="./assets/img/icons/cv.png" alt="Imagen de icono del CV">
                         </a>
                     </button>
-
                     <button class="about__btn">
                         <a class="about__link" href="mailto:garciacruzfabian23@gmail.com">
                             <p>Correo</p>
-                            <img class="about__btn__img" src="./assets/img/icons/correo.png" alt="">
+                            <img class="about__btn__img" src="./assets/img/icons/correo.png"
+                                alt="Imagen de icono de carta">
                         </a>
                     </button>
                 </footer>
-
             </div>
         </section>
 
@@ -128,71 +119,63 @@
             <header class="tecnology__header">
                 <h3>Habilidades</h3>
             </header>
-            <div class="tecnology__container__slider">
-
+            <article class="tecnology__container__slider">
                 <div class="tecnology__line"></div>
-
                 <div class="tecnology__slider">
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__html"
-                            src="./assets/img/slider__skills/telefono-movil.png" alt="">
+                            src="./assets/img/slider__skills/telefono-movil.png" alt="Imagen de telefono">
                         <h3 class="tecnology__img__name">Primero Movil</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__css"
-                            src="./assets/img/slider__skills/responsivo.png" alt="">
+                            src="./assets/img/slider__skills/responsivo.png" alt="imagen de telefono,tablet y monitor">
                         <h3 class="tecnology__img__name">Diseño Responsivo</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__javascript"
-                            src="./assets/img/slider__skills/diseño.png" alt="">
+                            src="./assets/img/slider__skills/diseño.png"
+                            alt="imagen de monitor con lapiz, lapicero y pincel">
                         <h3 class="tecnology__img__name">Diseño Web</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__react"
-                            src="./assets/img/slider__skills/layout.png" alt="">
+                            src="./assets/img/slider__skills/layout.png"
+                            alt="imagen de cuadrado con rectangulos y cuadrados dentro">
                         <h3 class="tecnology__img__name">Layout</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__router"
-                            src="./assets/img/slider__skills/optimizacion-web.png" alt="">
+                            src="./assets/img/slider__skills/optimizacion-web.png" alt="imagen de medidor">
                         <h3 class="tecnology__img__name">Optimizacion Web</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__redux"
-                            src="./assets/img/slider__skills/adaptado.png" alt="">
+                            src="./assets/img/slider__skills/adaptado.png"
+                            alt="imagen de persona con figuras a su alrededor">
                         <h3 class="tecnology__img__name">Adaptabilidad</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__github"
-                            src="./assets/img/slider__skills/equipo.png" alt="">
+                            src="./assets/img/slider__skills/equipo.png" alt="imagen de tres personas">
                         <h3 class="tecnology__img__name">Trabajo en equipo</h3>
-                    </div>
-
-                    <div data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
+                    </article>
+                    <article data-tilt data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500"
                         class="tecnology__container__img">
                         <img class="tecnology__img tecnology__img--size tecnology__img__github"
-                            src="./assets/img/slider__skills/proactivo.png" alt="">
+                            src="./assets/img/slider__skills/proactivo.png"
+                            alt="imagen de persona con ideas a su alrededor">
                         <h3 class="tecnology__img__name">Proactividad</h3>
-                    </div>
-
+                    </article>
                 </div>
-
-            </div>
+            </article>
         </section>
 
         <section id="tecnology" class="section tecnology show">
@@ -256,48 +239,42 @@
 
         <section id="portfolio" class="section portfolio show">
             <div class="projects">
-
                 <header class="portdolio__header">
                     <h3>Proyectos</h3>
                 </header>
-
-                <div class="project__container">
-
+                <article class="project__container">
                     <header class="project__header">
-
                         <div class="project__header__tech">
-                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/react.png"
+                                alt="Imagen de icono de react">
+                            <img class="project__technology" src="./assets/img/projects_technology/css.png"
+                                alt="Imagen de icono de css">
                             <img class="project__technology project__technology--size"
-                                src="./assets/img/projects_technology/redux.png" alt="">
+                                src="./assets/img/projects_technology/redux.png" alt="Imagen de icono de redux">
                             <img class="project__technology project__technology--size"
-                                src="./assets/img/projects_technology/javascript.png" alt="">
+                                src="./assets/img/projects_technology/javascript.png"
+                                alt="Imagen de icono de javascript">
                         </div>
-
                         <div class="project__header__btns">
-
                             <button class="project__header__btn">
                                 <a target="_blank" href="https://github.com/Fabian-9001/POKE-API.git">
                                     <p>Github</p>
                                     <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/github.png" alt="">
+                                        src="./assets/img/projects_technology/github.png"
+                                        alt="Imagen de icono de github">
                                 </a>
                             </button>
-
                             <button class="project__header__btn">
                                 <a target="_blank" href="https://poke-api-9001.netlify.app">
                                     <p>Desplegable</p>
                                     <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/desplegar.png" alt="">
+                                        src="./assets/img/projects_technology/desplegar.png"
+                                        alt="Imagen de icono de pestaña nueva en la web">
                                 </a>
                             </button>
-
                         </div>
-
                     </header>
-
                     <div class="hidden project__posters posters__pokemon"></div>
-
                     <footer class="project__footer">
                         <p class="project__footer__title">POKEDEX</p>
                         <p class="project__footer__description">
@@ -308,41 +285,38 @@
                             -Busquedas con inputs no controlados y renderizados condicionales
                         </p>
                     </footer>
-
-                </div>
-
-                <div class="project__container">
-
+                </article>
+                <article class="project__container">
                     <header class="project__header">
-
                         <div class="project__header__tech">
-                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
+                            <img class="project__technology" src="./assets/img/projects_technology/react.png"
+                                alt="Imagen de icono de react">
+                            <img class="project__technology" src="./assets/img/projects_technology/css.png"
+                                alt="Imagen de icono de css">
                             <img class="project__technology project__technology--size"
-                                src="./assets/img/projects_technology/javascript.png" alt="">
+                                src="./assets/img/projects_technology/javascript.png"
+                                alt="Imagen de icono de javascript">
                         </div>
-
                         <div class="project__header__btns">
                             <button class="project__header__btn">
                                 <a target="_blank" href="https://github.com/Fabian-9001/Rick-and-Morty-App.git">
                                     <p>Github</p>
                                     <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/github.png" alt="">
+                                        src="./assets/img/projects_technology/github.png"
+                                        alt="Imagen de icono de github">
                                 </a>
                             </button>
                             <button class="project__header__btn">
                                 <a target="_blank" href="https://rick-and-morty-9001.netlify.app">
                                     <p>Desplegable</p>
                                     <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/desplegar.png" alt="">
+                                        src="./assets/img/projects_technology/desplegar.png"
+                                        alt="Imagen de icono de pestaña nueva en la web">
                                 </a>
                             </button>
                         </div>
-
                     </header>
-
                     <div class="hidden project__posters posters__rickMorty"></div>
-
                     <footer class="project__footer">
                         <p class="project__footer__title">Rick and Morty</p>
                         <p class="project__footer__description">
@@ -354,56 +328,47 @@
                             navegaciones por medio de un input controlado y no controlado
                         </p>
                     </footer>
-
-                </div>
-
-                <div class="project__container">
-
-                    <header class="project__header">
-
-                        <div class="project__header__tech">
-                            <img class="project__technology" src="./assets/img/projects_technology/react.png" alt="">
-                            <img class="project__technology" src="./assets/img/projects_technology/css.png" alt="">
-                        </div>
-
-                        <div class="project__header__btns">
-
-                            <button class="project__header__btn">
-                                <a target="_blank" href="https://github.com/Fabian-9001/Weather-App.git">
-                                    <p>Github</p>
-                                    <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/github.png" alt="">
-                                </a>
-                            </button>
-
-                            <button class="project__header__btn">
-                                <a target="_blank" href="https://weather-app-ramdom-img.netlify.app">
-                                    <p>Desplegable</p>
-                                    <img class="project__header__btn__img"
-                                        src="./assets/img/projects_technology/desplegar.png" alt="">
-                                </a>
-                            </button>
-
-                        </div>
-
-                    </header>
-
-                    <div class="hidden project__posters posters__quotes"></div>
-
-                    <footer class="project__footer">
-                        <p class="project__footer__title">Weather APP</p>
-                        <p class="project__footer__description">
-                            -Obtiene la localizacion actual con la API de geolocalización
-                            <br><br>
-                            -Navegación a localizaciones mediante un input no controlado
-                            <br><br>
-                            -Consigue información de la zona especificada, entre ellas la temperatura y la
-                            trasforma en grados Celsius y Fahrenheit
-                        </p>
-                    </footer>
-
-                </div>
-
+                    </artic>
+                    <article class="project__container">
+                        <header class="project__header">
+                            <div class="project__header__tech">
+                                <img class="project__technology" src="./assets/img/projects_technology/react.png"
+                                    alt="Imagen de icono de react">
+                                <img class="project__technology" src="./assets/img/projects_technology/css.png"
+                                    alt="Imagen de icono de css">
+                            </div>
+                            <div class="project__header__btns">
+                                <button class="project__header__btn">
+                                    <a target="_blank" href="https://github.com/Fabian-9001/Weather-App.git">
+                                        <p>Github</p>
+                                        <img class="project__header__btn__img"
+                                            src="./assets/img/projects_technology/github.png"
+                                            alt="Imagen de icono de github">
+                                    </a>
+                                </button>
+                                <button class="project__header__btn">
+                                    <a target="_blank" href="https://weather-app-ramdom-img.netlify.app">
+                                        <p>Desplegable</p>
+                                        <img class="project__header__btn__img"
+                                            src="./assets/img/projects_technology/desplegar.png"
+                                            alt="Imagen de icono depestaña nueva en la web">
+                                    </a>
+                                </button>
+                            </div>
+                        </header>
+                        <div class="hidden project__posters posters__quotes"></div>
+                        <footer class="project__footer">
+                            <p class="project__footer__title">Weather APP</p>
+                            <p class="project__footer__description">
+                                -Obtiene la localizacion actual con la API de geolocalización
+                                <br><br>
+                                -Navegación a localizaciones mediante un input no controlado
+                                <br><br>
+                                -Consigue información de la zona especificada, entre ellas la temperatura y la
+                                trasforma en grados Celsius y Fahrenheit
+                            </p>
+                        </footer>
+                    </article>
             </div>
         </section>
 
@@ -422,34 +387,28 @@
     <footer class="footer">
         <div class="footer__subcontainer1">
             <div class="footer__logo">
-                <img class="footer__img" src="./assets/img/logo.png" alt="">
+                <img class="footer__img" src="./assets/img/logo.gif" alt="Imagen de icono de con nombre Fabian Cruz">
             </div>
-
             <div class="footer__socials">
                 <a target="_blank" href="https://www.linkedin.com/in/fabian-cruz-7631a924b/">
                     <img class="home__socials__img" src="./assets/img//icons/linkedin.gif" alt="Logo de Linkedin">
                 </a>
-
                 <a target="_blank" href="https://www.instagram.com/fabian_cruz21/?theme=dark">
                     <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/instagram.gif"
                         alt="Logo de instagram">
                 </a>
-
                 <a target="_blank" href="https://github.com/Fabian-9001">
                     <img class="home__socials__img" src="./assets/img/icons/github.gif" alt="Logo de Github">
                 </a>
-
                 <a target="_blank" href="https://www.facebook.com/fabian.cruz.garcia.9001/">
                     <img class="home__socials__img home__socials__img--rotate" src="./assets/img//icons/facebook.gif"
                         alt="Logo de Facebook">
                 </a>
             </div>
         </div>
-
         <div class="footer__subcontainer2">
             <p class="footer__copyright">Copyright © All Rights Reserved</p>
         </div>
-
     </footer>
 
     <script src="./main.js"></script>
