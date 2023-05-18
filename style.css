@@ -196,14 +196,29 @@ a {
 }
 
 /*HOME*/
+.home {
+position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.home__data {
+
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-70%);
+}
 .h1 {
     color: rgb(143, 143, 143);
     font-family: var(--font-title);
-    font-size: 1.4rem;
+    font-size: max(20%,3rempx);
     margin: 0 20px;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    position: relative; 
+    margin-bottom: 50px;
 }
 
 .home__socials {
@@ -215,7 +230,7 @@ a {
 
 .home__socials__img {
     border-radius: 50%;
-    width: 35px;
+    width: 55px;
     cursor: pointer;
 }
 
@@ -246,6 +261,8 @@ a {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute;
+    bottom: 10%;
 }
 
 .home__cross {
